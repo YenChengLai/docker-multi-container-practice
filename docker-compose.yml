@@ -6,4 +6,4 @@ services: # Each service represents a container in docker-compose.yml
     build: . # look for the Dockerfile in the specified directory to build an image
     ports:
       - "4000:8081" # port on local machine : port in the container
-      
+    restart: always
