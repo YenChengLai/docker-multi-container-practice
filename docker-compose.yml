@@ -1,0 +1,9 @@
+version: '3'
+services: # Each service represents a container in docker-compose.yml
+  redis-server:
+    image: 'redis'
+  node-app:
+    build: . # look for the Dockerfile in the specified directory to build an image
+    ports:
+      - "4000:8081" # port on local machine : port in the container
+      
